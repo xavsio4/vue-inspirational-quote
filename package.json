@@ -1,10 +1,34 @@
 {
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xavsio4/vue-inspirational-quote.git"
+  },
+  "keywords": [
+    "vuejs",
+    "quotes",
+    "favqs"
+  ],
+  "author": "x. Villamuera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xavsio4/vue-inspirational-quote/issues"
+  },
+  "homepage": "https://github.com/xavsio4/vue-inspirational-quote#readme",
+  "files": [
+    "dist/*"
+  ],
   "name": "vue-inspirational-quote",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "postpublish": "npm publish --ignore-scripts --@xavsio4:registry='http://registry.npmjs.org'",
+    "build-bundle": "vue-cli-service build --target lib --name vue-inspirational-quote ./src/components/InspirationalQuote.vue",
+    "build-compo": "vue-cli-service build --target wc --name vue-inspirational-quote ./src/components/InspirationalQuote.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
