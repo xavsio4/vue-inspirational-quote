@@ -62,8 +62,9 @@ Events
 | **@quote**         | *item*: (the quote data) item.value         | emits the quote              |
 
 
-
+This is the demo in the marvellous Codesandbox\
+[![Edit vue-inspirational-quote](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/vue-inspirational-quote-757s7?fontsize=14&hidenavigation=1&theme=dark)
 
 
 ## Version History
-- 1.0.0 First Working Version.
+- 0.1.3 First Working Version.
